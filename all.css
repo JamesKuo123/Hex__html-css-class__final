@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 以上是reset */
+
+html{
+	font-family: "微軟正黑體";
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	min-width: 100vw;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.sharebox{
+	background-color: #f6f6f6;
+	height: 30px;
+	padding-right: 20px;
+	width: 100vw;
+	text-align: right;
+}
+
+.sharebox a{
+	padding-left: 20px;
+	padding-right: 10px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 15px;
+	line-height: 30px;
+	margin-left: 8px;
+}
+
+.sharebox a:hover{
+	text-decoration: underline;
+}
+
+.fb{
+	background-image: url(pic/facebookIcon.png);
+	color: #4460a0;
+	border-right: 1px solid #cccccc;
+}
+
+.twitter{
+	background-image: url(pic/twitterIcon.png);
+	color: #00aaec;
+}
+
+.menubox{
+	background-color: #fff;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 3px;
+	padding-right: 15px;
+}
+
+.menubox a{
+	display: flex;
+	align-items: center;
+}
+
+.menubox ul{
+	display: flex;
+}
+
+.menubox ul li{
+	transition: 0.2s;
+
+	margin: 0 12px;
+}
+.menubox ul a{
+	font-size: 15px;
+	color: #00cc99;
+	line-height: 50px;
+	padding: 0 12px;
+}
+
+.menubox ul li:hover{
+	border-bottom: 5px solid #00cc99;
+}
+
+.banner{
+	width: 100vw;
+	background-image: url(pic/banner.png);
+	margin-top: 80px;
+	background-size: cover;
+	background-position: center;
+	height: 420px;
+}
+
+.banner div{
+	margin-top: 165px;
+	height: 162px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 24px;
+	background-color:rgba(0,0,0,0.1);
+}
+
+.banner div h1{
+	font-size: 34px;
+	line-height: 49px;
+	font-weight: bold;
+	color: white;
+}
+
+.course_area{
+	display: flex;
+	justify-content: center;
+	margin: 65px 0;
+}
+
+.course_area a{
+	display: flex;
+	flex-direction: column;
+	width: 305px;
+	box-shadow: 0 5px 5px #d6d6d6;
+	margin-right: 30px;
+	padding-bottom: 25px;
+	color: #333333;
+}
+
+.course_area a:last-child{
+	margin-right: 0;
+}
+
+.course_area a:hover{
+	box-shadow: 0 8px 15px #d6d6d6;
+}
+
+.course_area div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 174px;
+	padding: 0 20px;
+}
+
+.course_area h2{
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.course_area p{
+	padding: 0 20px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: justify;
+}
+
+.comparison{
+	border-collapse: collapse;
+	width: 80%;
+	margin: 0 auto 60px;
+}
+
+.comparison caption{
+	font-size: 23px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.comparison th,.comparison td{
+	height: 37px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	font-size: 15px;
+	text-align: left;
+	padding-left: 24px;
+	line-height: 37px;
+}
+
+.comparison th{
+	background-color: #f7f7f7;
+	font-weight: bold;
+}
+
+.feature{
+	color: #00cc99;
+}
+
+.form{
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: linear-gradient(#00644b, #009772);
+}
+
+.form h1{
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+	line-height: 38px;
+	margin-bottom: 28px;
+}
+
+.form_content{
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.form textarea{
+	margin-right: 20px;
+	border:0;
+	line-height: 1.5em;
+	width: 40vw;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #333333;
+	padding: 6px 13px;
+}
+
+.form form{
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 40vw;
+}
+
+.form label{
+	color: white;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.form input[type="text"]{
+	height: 32px;
+	margin-bottom: 16px;
+	border-radius: 3px;
+	border:0;
+	font-size: 14px;
+	color: #333333;
+	padding-left: 13px;
+	line-height: 32px;
+	font-family: '微軟正黑體';
+}
+
+.form input[type="submit"]{
+	margin-top: 5px;
+	height: 32px;
+	width: 70px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 14px;
+	color: white;
+	border-radius: 3px;
+	border: 0;
+	background-color: #00cc99;
+	align-self: flex-end;
+	font-family: '微軟正黑體';
+	font-weight: bold;
+}
+
+.form input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #00cc99;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 27px 20px;
+	height: 120px;
+}
+
+.footer .text{
+	margin-right: 30px;
+	margin-top: 2px;
+}
+
+.footer .text p{
+	margin-bottom: 10px;
+}
+
+.footer .text em{
+	color: #e12d80;
+	font-style: initial;
+}
